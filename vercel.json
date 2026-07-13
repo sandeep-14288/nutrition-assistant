@@ -1,6 +1,14 @@
 {
-  "outputDirectory": "client/dist",
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/(.*)",
+      "destination": "/server.js"
+    }
   ]
 }

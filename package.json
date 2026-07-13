@@ -1,9 +1,16 @@
 {
-  "name": "nutrition-assistant-monorepo",
+  "name": "backend",
   "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "cd client && npm install && npm run build"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
   "dependencies": {
     "axios": "^1.18.1",
     "bcryptjs": "^3.0.3",
@@ -12,5 +19,8 @@
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
